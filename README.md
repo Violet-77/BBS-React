@@ -15,17 +15,17 @@
 
 #### 登录前后的主页
 
-![登录后主页](src/assets/readme/index.png)
-![登录后主页](src/assets/readme/logined.png)
+![登录后主页](https://github.com/Violet-77/BBS-React/blob/master/src/asset/readme/index.png)
+![登录后主页](https://github.com/Violet-77/BBS-React/blob/master/src/asset/logined/index.png)
 
 #### 帖子详情及评论
 
-![帖子详情](src/assets/readme/postDetail.png)
-
-#### 登录
-
-![登录](src/assets/readme/login.png)
+![帖子详情](https://github.com/Violet-77/BBS-React/blob/master/src/asset/readme/postDetail.png)
 
 #### 注册
 
-![注册](src/assets/readme/register.png)
+![注册](https://github.com/Violet-77/BBS-React/blob/master/src/asset/readme/register.png)
+
+#### 登录
+
+![登录](https://github.com/Violet-77/BBS-React/blob/master/src/asset/readme/login.png)
