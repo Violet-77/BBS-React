@@ -1,0 +1,96 @@
+.home-main {
+  .main-container {
+    .classify {
+      width: 300px;
+      display: flex;
+      justify-content: space-around;
+      div {
+        text-align: center;
+        cursor: pointer;
+        padding: 3px 8px 4px;
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+      .active-item {
+        background-color: #555;
+        color: #fff;
+        &:hover {
+          background-color: #787878;
+        }
+      }
+    }
+    .main-content {
+      padding-top: 18px;
+      .post {
+        display: flex;
+        flex-flow: column;
+      }
+      .content-item {
+        position: relative;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        border: 1px solid #bcbcbc;
+        margin-bottom: -1px;
+        background-color: #fff;
+        .avatar {
+          margin-right: 10px;
+          img {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+          }
+        }
+        .content-wrap {
+          padding-top: 3px;
+          .title {
+            color: #778087;
+            font-size: 16px;
+            padding-left: 4px;
+            margin-bottom: 5px;
+            cursor: pointer;
+          }
+          .details {
+            font-size: 12px;
+            color: #ccc;
+            .content-classify {
+              background-color: #f5f5f5;
+              padding: 0 4px;
+              color: #999;
+            }
+
+            .name {
+              font-weight: 700;
+              color: #778087;
+              text-decoration: none;
+              word-break: break-word;
+              cursor: pointer;
+            }
+          }
+        }
+        .counts {
+          position: absolute;
+          top: 26px;
+          right: 15px;
+          width: 40px;
+          height: 16px;
+          display: inline-block;
+          background-color: #aab0c6;
+          border-radius: 8px;
+          color: #ffffff;
+          font-size: 14px;
+          text-align: center;
+          font-weight: 600;
+          line-height: 16px;
+          cursor: pointer;
+          &:hover {
+            background-color: #778087;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "~antd/dist/antd.css";
+
+html,
+body,
+div,
+p,
+img {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e2e2e2;
+}
+a {
+  text-decoration: none;
+}
+.ant-btn-primary {
+  color: #fff;
+  background: #555;
+  border-color: #555;
+  &:hover {
+    background-color: #787878;
+    border-color: #787878;
+  }
+}
+
+.content {
+  background-image: url(https://www.v2ex.com/static/img/shadow_light.png);
+  background-repeat: repeat-x;
+  padding-top: 40px;
+  .content-container {
+    width: 1154px;
+    // height: 300px;
+    margin: auto;
+  }
+}
+.footer {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  padding: 40px 0 10px;
+}

@@ -1,0 +1,22 @@
+.register {
+  .container {
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    .caption {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+    }
+    .register-form {
+      max-width: 1200px;
+      margin-left: -150px;
+      .button {
+        margin-left: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

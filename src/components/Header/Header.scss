@@ -1,0 +1,37 @@
+.header {
+  background-color: #fff;
+  height: 45px;
+  border-bottom: 1px solid rgba(0,0,0,.22);
+  .header-container {
+    width: 1154px;
+    height: 45px;
+    margin: auto;
+    xbackground-color: lightsalmon;
+    .logo {
+      float: left;
+      height: 45px;
+      line-height: 45px;
+      span {
+        font-size: 26px;
+        font-weight: 600;
+        color: #4d5256;
+      }
+    }
+    .info {
+      float: right;
+      .info-contain {
+        height: 45px;
+        div {
+          height: 45px;
+          line-height: 45px;
+          float: right;
+          cursor: pointer;
+          font-size: 15px;
+          &:not(.first) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.login {
+  .container {
+    // padding-left: 385px;
+    width: 460px;
+    height: 280px;
+    background-color: white;
+    margin: auto;
+    .caption {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+    }
+    .login-form {
+      max-width: 330px;
+      height: 100px;
+      margin: auto;
+      height: 200px;
+      line-height: 40px;
+      .login-form-button {
+        margin-left: -5px;
+      }
+    }
+  }
+}
