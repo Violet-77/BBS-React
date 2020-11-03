@@ -16,7 +16,7 @@
 #### 登录前后的主页
 
 ![登录后主页](https://github.com/Violet-77/BBS-React/blob/master/src/asset/readme/index.png)
-![登录后主页](https://github.com/Violet-77/BBS-React/blob/master/src/asset/logined/index.png)
+![登录后主页](https://github.com/Violet-77/BBS-React/blob/c4d023dba8b9d494332e3d6ce6998c7c3c75a274/src/asset/readme/logined.png)
 
 #### 帖子详情及评论
 
