@@ -46,7 +46,7 @@ export default function HomeMain() {
       "/compliment": 4,
     };
     let id = history.location.pathname;
-    console.log(history.location.pathname);
+    // console.log(history.location.pathname);
     setCategoryId(classifyTag[id]);
 
     getPosts(categoryId).then((res) => {

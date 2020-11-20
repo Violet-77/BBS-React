@@ -15,6 +15,8 @@ const DIR = __dirname + "/uploads/";
 const app = express();
 const port = 3001;
 
+
+
 let db;
 const dbPromise = require("./db.js");
 
@@ -48,6 +50,10 @@ app.use(async (req, res, next) => {
 
 //使用json中间件，解析json
 app.use(express.json());
+
+//启动build
+app.use(express.static(__dirname + '/build'))
+
 
 //文件存储地址
 app.use("/uploads", express.static(__dirname + "/uploads"));

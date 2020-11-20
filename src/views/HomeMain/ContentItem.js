@@ -34,7 +34,7 @@ export default function ContentItem({ post }) {
     <div className="content-item">
       <div className="avatar">
         <img
-          src={"http://localhost:3001/uploads/" + userInfo.avator}
+          src={process.env.REACT_APP_AVATAR_BASEURL + userInfo.avator}
           alt="帖子头像"
         />
       </div>
@@ -50,7 +50,9 @@ export default function ContentItem({ post }) {
         </div>
       </div>
       {commentCount.length > 0 ? (
-        <div className="counts" onClick={PostDetail}>{commentCount.length}</div>
+        <div className="counts" onClick={PostDetail}>
+          {commentCount.length}
+        </div>
       ) : null}
     </div>
   );

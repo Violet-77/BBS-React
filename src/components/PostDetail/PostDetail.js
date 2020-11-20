@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-import { useHistory, useParams } from "react-router-dom";
+import { Link, useHistory, useParams } from "react-router-dom";
 
 import { postDetail, getProfile, getComment, addComment } from "../../api/api";
 import { message, Button, Breadcrumb } from "antd";
@@ -33,7 +33,7 @@ export default function PostDetail() {
   useEffect(() => {
     getProfile(userId).then((res) => {
       setUserInfo(res.data);
-      console.log("用户信息: " + res.data);
+      // console.log("用户信息: " + res.data);
     });
   }, [userId]);
 
@@ -50,9 +50,9 @@ export default function PostDetail() {
         <Breadcrumb>
           <Breadcrumb.Item href="/">首页</Breadcrumb.Item>
           <Breadcrumb.Item>
-            <a href={"/" + tagPath[postInfo.category]}>
+            <Link to={"/" + tagPath[postInfo.category]}>
               {tagData[postInfo.category]}
-            </a>
+            </Link>
           </Breadcrumb.Item>
         </Breadcrumb>
 
@@ -62,7 +62,7 @@ export default function PostDetail() {
           <span className="time">{parseTime(postInfo.time)}</span>
         </div>
         <img
-          src={"http://localhost:3001/uploads/" + userInfo.avator}
+          src={process.env.REACT_APP_AVATAR_BASEURL + userInfo.avator}
           alt="发帖头像"
           className="avatar"
         />
@@ -96,13 +96,11 @@ function ContentItem({ comment }) {
     });
   }, [comment.userId]);
 
-  // console.log(process.env.REACT_APP_AVATAR_BASEURL)
-
   return (
     <div className="content-item">
       <div className="content-img">
         <img
-          src={"http://localhost:3001/uploads/" + commentUserInfo.avator}
+          src={process.env.REACT_APP_AVATAR_BASEURL + commentUserInfo.avator}
           alt="评论头像"
         />
       </div>
