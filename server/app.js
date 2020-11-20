@@ -13,7 +13,7 @@ const sqlMap = require("./sqlMap");
 const DIR = __dirname + "/uploads/";
 
 const app = express();
-const port = 3001;
+const port = 3007;
 
 
 
